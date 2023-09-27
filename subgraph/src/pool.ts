@@ -242,6 +242,7 @@ function createPoolEventEntity(
   eventEntity.pool = poolAddress;
   eventEntity.deposit = depositEntityId;
   eventEntity.transactionHash = event.transaction.hash;
+  eventEntity.blockNumber = event.block.number;
   eventEntity.timestamp = event.block.timestamp;
   eventEntity.from = event.transaction.from;
   eventEntity.account = account;

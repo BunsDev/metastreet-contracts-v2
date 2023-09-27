@@ -194,6 +194,7 @@ type Loan @entity {
 type PoolEvent @entity(immutable: true) {
   id: Bytes! # <pool><tx hash>
   transactionHash: Bytes!
+  blockNumber: BigInt!
   timestamp: BigInt! # uint64
   from: Bytes! # address
   account: Bytes! # address
